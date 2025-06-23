@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { ProductGrid } from "@/components/product-grid"
 import { ProductFilters } from "@/components/product-filters"
+import { ClientOnly } from "@/components/client-only"
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -82,10 +83,14 @@ export default function ShopPage() {
 
         <div className="flex flex-col lg:flex-row gap-8">
           <aside className="lg:w-1/4">
-            <ProductFilters />
+            <ClientOnly fallback={<div className="h-96 animate-pulse bg-gray-100 rounded-lg"></div>}>
+              <ProductFilters />
+            </ClientOnly>
           </aside>
           <main className="lg:w-3/4">
-            <ProductGrid />
+            <ClientOnly fallback={<div className="h-96 animate-pulse bg-gray-100 rounded-lg"></div>}>
+              <ProductGrid />
+            </ClientOnly>
           </main>
         </div>
       </div>

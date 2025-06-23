@@ -45,7 +45,7 @@ import GoogleSheetsService from "@/lib/google-sheets"
 
 export default function CheckoutPage() {
   const router = useRouter()
-  const { items, getTotalPrice, clearCart } = useCart()
+  const { items, total, clearCart } = useCart()
   const { toast } = useToast()
   const [isProcessing, setIsProcessing] = useState(false)
 
@@ -65,7 +65,7 @@ export default function CheckoutPage() {
   const [agreeToTerms, setAgreeToTerms] = useState(false)
   const [specialInstructions, setSpecialInstructions] = useState("")
 
-  const totalAmount = getTotalPrice()
+  const totalAmount = total
   const deliveryCharge = totalAmount >= 500 ? 0 : 50
   const finalTotal = totalAmount + deliveryCharge
 
