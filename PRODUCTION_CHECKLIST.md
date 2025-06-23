@@ -67,10 +67,10 @@ GOOGLE_SHEETS_API_KEY=your_api_key
 GOOGLE_SHEETS_SPREADSHEET_ID=your_spreadsheet_id
 
 # Contact Form Email
-ADMIN_EMAIL=your-email@krishanovafpc.com
+ADMIN_EMAIL=your-email@krishanova.in
 
 # Domain
-NEXT_PUBLIC_DOMAIN=https://krishanovafpc.com
+NEXT_PUBLIC_DOMAIN=https://krishanova.in
 ```
 
 ### **2. Google Services Setup**
@@ -80,7 +80,7 @@ NEXT_PUBLIC_DOMAIN=https://krishanovafpc.com
 - [ ] **Google Search Console**: Verify domain ownership
 
 ### **3. Domain & SSL**
-- [ ] Purchase domain (krishanovafpc.com)
+- [ ] Purchase domain (krishanova.in)
 - [ ] Configure DNS settings
 - [ ] SSL Certificate setup
 - [ ] CDN setup (Cloudflare recommended)

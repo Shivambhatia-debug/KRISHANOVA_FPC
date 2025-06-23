@@ -17,7 +17,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://krishanovafpc.com"),
+  metadataBase: new URL("https://krishanova.in"),
   title: {
     default: "Krishanova FPC - Premium Makhana & Healthy Snacks | 100% Organic Fox Nuts",
     template: "%s | Krishanova FPC",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://krishanovafpc.com",
+    url: "https://krishanova.in",
     siteName: "Krishanova FPC",
     title: "Krishanova FPC - Premium Makhana & Healthy Snacks",
     description:
@@ -102,11 +102,11 @@ export const metadata: Metadata = {
     other: [{ rel: "mask-icon", url: "/safari-pinned-tab.svg", color: "#16a34a" }],
   },
   alternates: {
-    canonical: "https://krishanovafpc.com",
-    languages: {
-      "en-IN": "https://krishanovafpc.com",
-      "hi-IN": "https://krishanovafpc.com/hi",
-    },
+    canonical: "https://krishanova.in",
+          languages: {
+        "en-IN": "https://krishanova.in",
+        "hi-IN": "https://krishanova.in/hi",
+      },
   },
   generator: 'Krishanova FPC'
 }
@@ -131,7 +131,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <StructuredData />
-        <link rel="dns-prefetch" href="https://api.krishanovafpc.com" />
+        <link rel="dns-prefetch" href="https://api.krishanova.in" />
         <link rel="preload" href="/images/makhana-1.jpg" as="image" type="image/jpeg" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />

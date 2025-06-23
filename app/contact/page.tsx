@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Krishanova FPC - Get in Touch",
     description: "Contact us for premium makhana orders, bulk inquiries, partnerships, or any questions. We're here to help!",
-    url: "https://krishanovafpc.com/contact",
+    url: "https://krishanova.in/contact",
     images: [
       {
         url: "/images/contact-og-image.jpg",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://krishanovafpc.com/contact",
+    canonical: "https://krishanova.in/contact",
   },
 }
 

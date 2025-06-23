@@ -106,7 +106,7 @@ export default function TermsPage() {
             </CardHeader>
             <CardContent className="prose max-w-none">
               <p className="text-gray-600 mb-4">
-                By accessing this website, accessible from krishanovafpc.com, you are agreeing to be bound by these 
+                By accessing this website, accessible from krishanova.in, you are agreeing to be bound by these 
                 website Terms and Conditions of Use and agree that you are responsible for the agreement with any 
                 applicable local laws.
               </p>

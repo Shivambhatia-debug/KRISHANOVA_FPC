@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Krishanova FPC - Our Story & Mission",
     description: "Learn about our journey from Bihar to becoming India's leading premium makhana brand.",
-    url: "https://krishanovafpc.com/about",
+    url: "https://krishanova.in/about",
     images: [
       {
         url: "/images/about-og-image.jpg",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://krishanovafpc.com/about",
+    canonical: "https://krishanova.in/about",
   },
 }
 
@@ -48,8 +48,8 @@ const aboutPageSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Krishanova FPC",
-  url: "https://krishanovafpc.com",
-  logo: "https://krishanovafpc.com/images/krishanova-logo.png",
+  url: "https://krishanova.in",
+  logo: "https://krishanova.in/images/krishanova-logo.png",
   description: "Premium makhana and healthy snacks company based in Bihar, India",
   foundingDate: "2020",
   founder: {

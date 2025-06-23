@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
     openGraph: {
       title: `${productName} - Premium Makhana | Krishanova FPC`,
       description: `Buy ${productName} online. Premium quality, 100% organic, free shipping on orders above ₹500.`,
-      url: `https://krishanovafpc.com/product/${slug}`,
+      url: `https://krishanova.in/product/${slug}`,
       type: "product",
       images: [
         {
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
       ],
     },
     alternates: {
-      canonical: `https://krishanovafpc.com/product/${slug}`,
+      canonical: `https://krishanova.in/product/${slug}`,
     },
   }
 }
@@ -60,14 +60,14 @@ export default async function ProductPage({ params }: ProductPageProps) {
     "@type": "Product",
     name: "Premium Roasted Makhana",
     description: "Premium quality roasted makhana (fox nuts) - 100% organic, high protein, gluten-free healthy snack",
-    image: ["https://krishanovafpc.com/images/makhana-1.jpg"],
+    image: ["https://krishanova.in/images/makhana-1.jpg"],
     brand: {
       "@type": "Brand",
       name: "Krishanova FPC",
     },
     offers: {
       "@type": "Offer",
-      url: `https://krishanovafpc.com/product/${slug}`,
+      url: `https://krishanova.in/product/${slug}`,
       priceCurrency: "INR",
       price: "299",
       availability: "https://schema.org/InStock",

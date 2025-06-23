@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Media Center - Recipes, Tips & Stories | Krishanova FPC",
     description: "Discover healthy recipes, nutrition tips, and behind-the-scenes stories from our kitchen.",
-    url: "https://krishanovafpc.com/blog",
+    url: "https://krishanova.in/blog",
     images: [
       {
         url: "/images/blog-og-image.jpg",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://krishanovafpc.com/blog",
+    canonical: "https://krishanova.in/blog",
   },
 }
 
@@ -46,11 +46,11 @@ const blogSchema = {
   "@type": "Blog",
   name: "Krishanova FPC Media Center",
   description: "Recipes, nutrition tips, and stories about healthy snacking with makhana",
-  url: "https://krishanovafpc.com/blog",
+  url: "https://krishanova.in/blog",
   publisher: {
     "@type": "Organization",
     name: "Krishanova FPC",
-    logo: "https://krishanovafpc.com/images/krishanova-logo.png",
+    logo: "https://krishanova.in/images/krishanova-logo.png",
   },
 }
 

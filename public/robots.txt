@@ -16,7 +16,7 @@ Allow: /about/
 Allow: /contact/
 
 # Sitemap location
-Sitemap: https://krishanovafpc.com/sitemap.xml
+Sitemap: https://krishanova.in/sitemap.xml
 
 # Crawl delay (optional)
 Crawl-delay: 1

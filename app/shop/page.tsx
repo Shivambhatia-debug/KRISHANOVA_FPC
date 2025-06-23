@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Shop Premium Makhana & Healthy Snacks | Krishanova FPC",
     description:
       "Browse our complete collection of premium makhana and healthy snacks. Free shipping on orders above ₹500.",
-    url: "https://krishanovafpc.com/shop",
+    url: "https://krishanova.in/shop",
     images: [
       {
         url: "/images/shop-og-image.jpg",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://krishanovafpc.com/shop",
+    canonical: "https://krishanova.in/shop",
   },
 }
 
@@ -48,7 +48,7 @@ const shopPageSchema = {
   "@type": "CollectionPage",
   name: "Shop Premium Makhana & Healthy Snacks",
   description: "Browse our complete collection of premium makhana and healthy snacks",
-  url: "https://krishanovafpc.com/shop",
+  url: "https://krishanova.in/shop",
   mainEntity: {
     "@type": "ItemList",
     numberOfItems: 25,
@@ -57,7 +57,7 @@ const shopPageSchema = {
         "@type": "Product",
         position: 1,
         name: "Premium Roasted Makhana",
-        url: "https://krishanovafpc.com/product/premium-roasted-makhana",
+        url: "https://krishanova.in/product/premium-roasted-makhana",
       },
     ],
   },
