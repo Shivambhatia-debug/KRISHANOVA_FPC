@@ -31,10 +31,10 @@ export function StructuredData() {
       availableLanguage: ["English", "Hindi"],
     },
     sameAs: [
-      "https://www.facebook.com/krishanovafpc",
-      "https://www.instagram.com/krishanovafpc",
-      "https://www.twitter.com/krishanovafpc",
-      "https://www.linkedin.com/company/krishanovafpc",
+      "https://www.facebook.com/krishanova",
+      "https://www.instagram.com/krishanova",
+      "https://www.twitter.com/krishanova",
+      "https://www.linkedin.com/company/krishanova",
     ],
     aggregateRating: {
       "@type": "AggregateRating",

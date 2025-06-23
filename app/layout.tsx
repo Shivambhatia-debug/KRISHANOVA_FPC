@@ -67,8 +67,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    site: "@krishanovafpc",
-    creator: "@krishanovafpc",
+    site: "@krishanova",
+    creator: "@krishanova",
     title: "Krishanova FPC - Premium Makhana & Healthy Snacks",
     description: "Premium quality makhana (fox nuts) and healthy snacks. 100% natural, organic, and delicious.",
     images: ["/images/krishanova-logo.png"],
