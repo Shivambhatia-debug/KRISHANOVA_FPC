@@ -59,7 +59,7 @@ export function BrandStoryScroll() {
             fill
             priority={idx === 0}
             sizes="100vw"
-            className={`object-cover transition-transform duration-[6000ms] ${visible ? "scale-110" : "scale-100"}`}
+            className={`object-cover transition-transform duration-1000 ${visible ? "scale-110" : "scale-100"}`}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/60" />
           <div className="relative z-10 max-w-3xl mx-auto px-4 text-center space-y-6">
