@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic"
+
 import { CartPage } from "@/components/cart-page"
 import {
   Breadcrumb,
