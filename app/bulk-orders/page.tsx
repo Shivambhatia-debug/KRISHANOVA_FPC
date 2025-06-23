@@ -413,13 +413,13 @@ export default function BulkOrdersPage() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button asChild variant="secondary" className="bg-white text-green-700 hover:bg-green-50 flex-1">
-                      <a href="tel:+919876543210">
+                      <a href="tel:+919122085387">
                         <Phone className="mr-2 h-4 w-4" />
-                        Call Now: +91 98765 43210
+                        Call Now: +91 91220 85387
                       </a>
                     </Button>
                     <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-green-700 flex-1">
-                      <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+                      <a href="https://wa.me/919122085387" target="_blank" rel="noopener noreferrer">
                         <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 fill-current"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-.88-.436-1.017-.487s-.396-.074-.567.074-.567.487-.694.567-.255.099-.487-.05s-1.017-.375-1.94-1.21-.714-1.485-.804-1.733s-.074-.224.05-.375.224-.28.347-.375.149-.174.224-.28s.025-.149-.05-.325-.567-1.374-.737-1.882-.347-.436-.567-.436h-.567c-.224 0-.487.05-.694.325s-.804.787-.804 1.882c0 1.096.83 2.175.929 2.325s1.615 2.473 3.918 3.443.787.325 1.066.276c.436-.074 1.374-.567 1.57-1.112s.2-1.017.149-1.112zM12.002 2.179c-5.42 0-9.818 4.398-9.818 9.818 0 2.894 1.253 5.49 3.271 7.34l-1.63 4.348 4.46-1.608c1.78.966 3.804 1.516 5.92 1.516h.002c5.42 0 9.818-4.398 9.818-9.818 0-5.42-4.398-9.818-9.818-9.818zm0 18.01c-2.34 0-4.51-.76-6.28-2.05l-.45-.27-4.66 1.68 1.69-4.54-.3-.48c-1.39-2.22-2.13-4.79-2.13-7.53 0-4.59 3.73-8.32 8.32-8.32 4.59 0 8.32 3.73 8.32 8.32 0 4.59-3.73 8.32-8.32 8.32z"/></svg>
                         WhatsApp Us
                       </a>

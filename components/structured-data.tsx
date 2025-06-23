@@ -17,17 +17,17 @@ export function StructuredData() {
     ],
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Industrial Area",
-      addressLocality: "Bihar",
+      streetAddress: "Darbhanga",
+      addressLocality: "Darbhanga",
       addressRegion: "Bihar",
-      postalCode: "800001",
+      postalCode: "846004",
       addressCountry: "IN",
     },
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+91-98765-43210",
+      telephone: "+91-91220-85387",
       contactType: "customer service",
-      email: "hello@krishanovafpc.com",
+      email: "info.krishanova@gmail.com",
       availableLanguage: ["English", "Hindi"],
     },
     sameAs: [

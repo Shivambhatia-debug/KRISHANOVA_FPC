@@ -85,7 +85,7 @@ export default function ContactForm() {
               <FormItem>
                 <FormLabel>Email Address</FormLabel>
                 <FormControl>
-                  <Input placeholder="hello@krishanovafpc.com" {...field} />
+                  <Input placeholder="info.krishanova@gmail.com" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -99,7 +99,7 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel>Phone Number</FormLabel>
               <FormControl>
-                <Input placeholder="+91 98765 43210" {...field} />
+                <Input placeholder="+91 91220 85387" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

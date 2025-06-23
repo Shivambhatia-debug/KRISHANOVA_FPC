@@ -12,7 +12,7 @@ const heroSlides = [
     title: "Pure & Delicious",
     subtitle: "Tangy Makhana",
     description: "Experience the perfect crunch with our tangy flavored makhana, a healthy and delicious snack.",
-    image: "/images/hero-1.jpg",
+    image: "/images/tangy-makhana-pack.jpg",
     cta: "Shop Now",
     ctaLink: "/shop",
     theme: "emerald",
@@ -20,9 +20,9 @@ const heroSlides = [
   {
     id: 2,
     title: "Naturally Nutritious",
-    subtitle: "Makhana Medley",
-    description: "A delightful mix of makhana, nuts, and spices. The perfect healthy snack for any time of day.",
-    image: "/images/hero-2.jpg",
+    subtitle: "Premium Makhana",
+    description: "A delightful mix of premium makhana with natural flavors. The perfect healthy snack for any time of day.",
+    image: "/images/premium-makhana-pack.jpg",
     cta: "Explore Range",
     ctaLink: "/shop",
     theme: "blue",
@@ -30,9 +30,9 @@ const heroSlides = [
   {
     id: 3,
     title: "Taste of Tradition",
-    subtitle: "Classic Makhana",
-    description: "Our classic roasted makhana with a hint of spice and herbs. A timeless favorite.",
-    image: "/images/hero-3.jpg",
+    subtitle: "Makhana Macaroni",
+    description: "Our innovative makhana macaroni combines tradition with modern taste. A unique and satisfying experience.",
+    image: "/images/makhana-macaroni.jpg",
     cta: "Try Flavors",
     ctaLink: "/shop",
     theme: "purple",
@@ -40,9 +40,9 @@ const heroSlides = [
   {
     id: 4,
     title: "Simply Wholesome",
-    subtitle: "Roasted Makhana",
-    description: "Lightly roasted to perfection, our makhana is a simple, healthy, and satisfying snack.",
-    image: "/images/hero-4.jpg",
+    subtitle: "Classic Makhana",
+    description: "Lightly roasted to perfection, our classic makhana is a simple, healthy, and satisfying snack.",
+    image: "/images/makhana-1.jpg",
     cta: "Discover More",
     ctaLink: "/shop",
     theme: "orange",
@@ -103,16 +103,21 @@ export function HeroSection() {
     setIsMounted(true)
   }, [])
 
+  // Auto-slide functionality with improved logic
   useEffect(() => {
-    if (!isAutoPlaying || !isMounted) return
+    if (!isMounted || !isAutoPlaying) return
 
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length)
-    }, 5000)
+      setCurrentSlide((prev) => {
+        const nextSlide = (prev + 1) % heroSlides.length
+        return nextSlide
+      })
+    }, 4000) // Changed to 4 seconds for faster transitions
 
     return () => clearInterval(interval)
-  }, [isAutoPlaying, isMounted])
+  }, [isMounted, isAutoPlaying])
 
+  // Mouse position tracking
   useEffect(() => {
     if (!isMounted) return
 
@@ -130,13 +135,22 @@ export function HeroSection() {
   const nextSlide = () => {
     setIsAutoPlaying(false)
     setCurrentSlide((prev) => (prev + 1) % heroSlides.length)
-    setTimeout(() => setIsAutoPlaying(true), 10000)
+    // Resume auto-play after 8 seconds instead of 10
+    setTimeout(() => setIsAutoPlaying(true), 8000)
   }
 
   const prevSlide = () => {
     setIsAutoPlaying(false)
     setCurrentSlide((prev) => (prev - 1 + heroSlides.length) % heroSlides.length)
-    setTimeout(() => setIsAutoPlaying(true), 10000)
+    // Resume auto-play after 8 seconds instead of 10
+    setTimeout(() => setIsAutoPlaying(true), 8000)
+  }
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index)
+    setIsAutoPlaying(false)
+    // Resume auto-play after 8 seconds
+    setTimeout(() => setIsAutoPlaying(true), 8000)
   }
 
   const currentSlideData = heroSlides[currentSlide]
@@ -334,11 +348,7 @@ export function HeroSection() {
           {heroSlides.map((_, index) => (
             <button
               key={index}
-              onClick={() => {
-                setCurrentSlide(index)
-                setIsAutoPlaying(false)
-                setTimeout(() => setIsAutoPlaying(true), 10000)
-              }}
+              onClick={() => goToSlide(index)}
               className={`transition-all duration-300 rounded-full ${
                 index === currentSlide
                   ? "w-12 h-3 bg-gradient-to-r from-white to-green-400 shadow-lg"
@@ -352,10 +362,28 @@ export function HeroSection() {
         {/* Auto-play Indicator - Only show after mount */}
         {isMounted && (
           <div className="flex justify-center mt-4">
-            <div className="bg-white/10 backdrop-blur-xl rounded-full px-4 py-2 border border-white/20">
-              <div className="text-xs text-white/80 flex items-center gap-2">
-                <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-                Slide {currentSlide + 1} of {heroSlides.length} • Auto-advancing
+            <div className="bg-white/10 backdrop-blur-xl rounded-full px-6 py-3 border border-white/20">
+              <div className="text-sm text-white/90 flex items-center gap-3 font-medium">
+                {isAutoPlaying ? (
+                  <>
+                    <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse" />
+                    <span>Auto-advancing • Slide {currentSlide + 1} of {heroSlides.length}</span>
+                    <div className="w-6 h-1 bg-white/30 rounded-full overflow-hidden">
+                      <div 
+                        className="h-full bg-green-400 rounded-full animate-pulse" 
+                        style={{ 
+                          animation: 'slideProgress 4s linear infinite',
+                          width: '0%'
+                        }}
+                      />
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="w-3 h-3 bg-yellow-400 rounded-full" />
+                    <span>Paused • Slide {currentSlide + 1} of {heroSlides.length}</span>
+                  </>
+                )}
               </div>
             </div>
           </div>

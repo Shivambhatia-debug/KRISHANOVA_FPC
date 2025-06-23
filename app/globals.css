@@ -283,6 +283,15 @@
   }
 }
 
+@keyframes slideProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 /* Utility Classes */
 .animate-in {
   animation-fill-mode: both;

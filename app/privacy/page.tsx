@@ -162,11 +162,11 @@ export default function PrivacyPage() {
               <h3 className="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
               <div className="space-y-3 text-gray-700">
                 <p>For any privacy-related questions or concerns, please contact us:</p>
-                <div className="space-y-2">
-                  <p><strong>Email:</strong> privacy@krishanovafpc.com</p>
-                  <p><strong>Phone:</strong> +91 98765 43210</p>
-                  <p><strong>Address:</strong> Krishanova FPC, Muzaffarpur, Bihar 842001, India</p>
-                </div>
+                                  <div className="space-y-2">
+                    <p><strong>Email:</strong> info.krishanova@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 91220 85387</p>
+                    <p><strong>Address:</strong> Krishanova FPC, Darbhanga, Bihar 846004, India</p>
+                  </div>
                 <p>We will respond to your privacy inquiries within 30 days.</p>
               </div>
             </CardContent>

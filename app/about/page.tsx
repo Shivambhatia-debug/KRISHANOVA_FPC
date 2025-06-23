@@ -58,15 +58,15 @@ const aboutPageSchema = {
   },
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Muzaffarpur",
-    addressLocality: "Muzaffarpur",
+    streetAddress: "Darbhanga",
+    addressLocality: "Darbhanga",
     addressRegion: "Bihar",
     addressCountry: "India",
   },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "+91-98765-43210",
-    email: "hello@krishanovafpc.com",
+    telephone: "+91-91220-85387",
+    email: "info.krishanova@gmail.com",
     contactType: "customer service",
   },
 }
@@ -75,7 +75,7 @@ const milestones = [
   {
     year: "2020",
     title: "Foundation",
-    description: "Started as a small farmer collective in Muzaffarpur, Bihar",
+    description: "Started as a small farmer collective in Darbhanga, Bihar",
   },
   {
     year: "2021",
@@ -163,10 +163,10 @@ export default function AboutPage() {
                 <h1 className="text-4xl lg:text-6xl font-black bg-gradient-to-r from-green-600 via-emerald-600 to-teal-600 bg-clip-text text-transparent leading-tight">
                   Our Story of Growth & Quality
                 </h1>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  From the fertile fields of Bihar to kitchens across India, Krishanova FPC has been on a mission 
-                  to bring you the finest quality makhana and healthy snacks while empowering local farmers.
-                </p>
+                              <p className="text-lg text-gray-600 leading-relaxed">
+                From the fertile fields of Darbhanga, Bihar to kitchens across India, Krishanova FPC has been on a mission 
+                to bring you the finest quality makhana and healthy snacks while empowering local farmers.
+              </p>
               </div>
               
               <div className="flex flex-wrap gap-4">

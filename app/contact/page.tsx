@@ -21,27 +21,52 @@ import ContactForm from "@/components/contact-form"
 export const metadata: Metadata = {
   title: "Contact Krishanova FPC - Get in Touch",
   description:
-    "Contact Krishanova FPC for premium makhana orders, bulk inquiries, partnerships, or any questions. Phone: +91 98765 43210, Email: hello@krishanovafpc.com",
+    "Contact Krishanova FPC for premium makhana orders, bulk inquiries, partnerships, or any questions. Phone: +91 91220 85387, Email: info.krishanova@gmail.com. Located in Darbhanga, Bihar.",
+  keywords: [
+    "contact Krishanova FPC",
+    "makhana supplier contact",
+    "bulk order inquiry",
+    "customer support",
+    "Darbhanga makhana",
+    "fox nuts wholesale",
+    "organic snacks contact",
+  ],
+  openGraph: {
+    title: "Contact Krishanova FPC - Get in Touch",
+    description: "Contact us for premium makhana orders, bulk inquiries, partnerships, or any questions. We're here to help!",
+    url: "https://krishanovafpc.com/contact",
+    images: [
+      {
+        url: "/images/contact-og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contact Krishanova FPC",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://krishanovafpc.com/contact",
+  },
 }
 
 const contactDetails = [
   {
     icon: Phone,
     title: "Phone",
-    content: "+91 98765 43210",
-    href: "tel:+919876543210",
+    content: "+91 91220 85387",
+    href: "tel:+919122085387",
   },
   {
     icon: Mail,
     title: "Email",
-    content: "hello@krishanovafpc.com",
-    href: "mailto:hello@krishanovafpc.com",
+    content: "info.krishanova@gmail.com",
+    href: "mailto:info.krishanova@gmail.com",
   },
   {
     icon: MapPin,
     title: "Address",
-    content: "Makhana Mandi, Muzaffarpur, Bihar 842001, India",
-    href: "https://maps.google.com/?q=Makhana+Mandi,+Muzaffarpur,+Bihar+842001,+India",
+    content: "Darbhanga, Bihar, India",
+    href: "https://maps.google.com/?q=Darbhanga,+Bihar,+India",
   },
   {
     icon: Clock,
@@ -54,19 +79,19 @@ const departmentContacts = [
     {
         icon: Headset,
         title: "Customer Support",
-        email: "support@krishanovafpc.com",
+        email: "info.krishanova@gmail.com",
         description: "For help with existing orders, tracking, and returns."
     },
     {
         icon: Package,
         title: "Bulk Orders & B2B",
-        email: "sales@krishanovafpc.com",
+        email: "info.krishanova@gmail.com",
         description: "For wholesale inquiries, partnerships, and bulk pricing."
     },
     {
         icon: Building,
         title: "Corporate Office",
-        email: "corporate@krishanovafpc.com",
+        email: "info.krishanova@gmail.com",
         description: "For media inquiries, careers, and other corporate matters."
     }
 ]

@@ -135,7 +135,7 @@ const faqCategories = [
       },
       {
         question: "How can I visit your facility?",
-        answer: "Factory visits are available by appointment. Contact us to schedule a visit to our state-of-the-art processing facility in Muzaffarpur, Bihar."
+        answer: "Factory visits are available by appointment. Contact us to schedule a visit to our state-of-the-art processing facility in Darbhanga, Bihar."
       }
     ]
   }
@@ -226,7 +226,7 @@ export default function FAQPage() {
                 Contact Support
               </a>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919122085387"
                 className="inline-flex items-center justify-center px-8 py-3 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-green-600 transition-all duration-200"
               >
                 WhatsApp Us

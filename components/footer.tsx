@@ -127,19 +127,19 @@ export function Footer() {
                   <div className="h-8 w-8 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-200 transition-colors">
                     <Phone className="h-4 w-4 text-green-600" />
                   </div>
-                  <span className="font-semibold">+91 98765 43210</span>
+                  <span className="font-semibold">+91 91220 85387</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm group">
                   <div className="h-8 w-8 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
                     <Mail className="h-4 w-4 text-blue-600" />
                   </div>
-                  <span className="font-semibold">hello@krishanovafpc.com</span>
+                  <span className="font-semibold">info.krishanova@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm group">
                   <div className="h-8 w-8 bg-red-100 rounded-lg flex items-center justify-center group-hover:bg-red-200 transition-colors">
                     <MapPin className="h-4 w-4 text-red-600" />
                   </div>
-                  <span className="font-semibold">Muzaffarpur, Bihar, India</span>
+                  <span className="font-semibold">Darbhanga, Bihar, India</span>
                 </div>
               </div>
             </div>

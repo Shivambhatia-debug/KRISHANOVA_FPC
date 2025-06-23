@@ -11,7 +11,7 @@ const categories = [
   {
     name: "Healthy Snacks",
     description: "Guilt-free munching options",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/makhana-1.jpg",
     href: "/shop/snacks",
     gradient: "from-green-400 via-emerald-500 to-teal-600",
     hoverGradient: "from-green-500 via-emerald-600 to-teal-700",
@@ -20,7 +20,7 @@ const categories = [
   {
     name: "Protein Foods",
     description: "Fuel your fitness journey",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/makhana-2.jpg",
     href: "/shop/protein",
     gradient: "from-orange-400 via-red-500 to-pink-600",
     hoverGradient: "from-orange-500 via-red-600 to-pink-700",
@@ -29,20 +29,20 @@ const categories = [
   {
     name: "Organic Range",
     description: "Pure & natural goodness",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/makhana-3.jpg",
     href: "/shop/organic",
     gradient: "from-blue-400 via-indigo-500 to-purple-600",
     hoverGradient: "from-blue-500 via-indigo-600 to-purple-700",
     icon: "🌱",
   },
   {
-    name: "Beverages",
-    description: "Refreshing & healthy drinks",
-    image: "/placeholder.svg?height=300&width=400",
-    href: "/shop/beverages",
+    name: "Premium Products",
+    description: "Our finest quality selection",
+    image: "/images/premium-makhana-pack.jpg",
+    href: "/shop/premium",
     gradient: "from-purple-400 via-pink-500 to-rose-600",
     hoverGradient: "from-purple-500 via-pink-600 to-rose-700",
-    icon: "🥤",
+    icon: "⭐",
   },
 ]
 
