@@ -3,8 +3,6 @@
 // Google Sheets API integration for storing data
 // Using Google Sheets as a simple backend for form submissions and orders
 
-import { toast } from 'sonner';
-
 interface ContactFormData {
   name: string
   email: string
@@ -108,7 +106,6 @@ export class GoogleSheetsService {
       });
     } catch (error) {
       console.error('Error submitting contact form:', error);
-      toast.error("Failed to send message. Please try again.");
       throw error;
     }
   }
@@ -121,7 +118,6 @@ export class GoogleSheetsService {
       });
     } catch (error) {
       console.error('Error submitting order:', error);
-      toast.error("Failed to submit order. Please try again.");
       throw error;
     }
   }
@@ -134,7 +130,6 @@ export class GoogleSheetsService {
       });
     } catch (error) {
       console.error('Error subscribing to newsletter:', error);
-      toast.error("Failed to subscribe. Please try again.");
       throw error;
     }
   }
@@ -147,7 +142,6 @@ export class GoogleSheetsService {
       });
     } catch (error) {
       console.error('Error submitting bulk order:', error);
-      toast.error("Failed to submit bulk order request. Please try again.");
       throw error;
     }
   }
@@ -160,7 +154,6 @@ export class GoogleSheetsService {
       });
     } catch (error) {
       console.error('Error registering user:', error);
-      toast.error("Failed to register. Please try again.");
       throw error;
     }
   }
